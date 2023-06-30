@@ -2,17 +2,63 @@ import 'package:flutter/material.dart';
 import 'package:list/pages/todo_list_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
   @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  int selectedPageIndex = 0;
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Buttom Navigation Bar',
       debugShowCheckedModeBanner: false,
-      home: TodoListPage(),
+      home: Scaffold(
+        body: const [
+          Center(
+            child: Text(
+              'Login',
+            ),
+          ),
+          Center(child: TodoListPage()),
+          Center(
+            child: Text(
+              'About',
+            ),
+          ),
+        ][selectedPageIndex],
+        bottomNavigationBar: NavigationBar(
+          selectedIndex: selectedPageIndex,
+          onDestinationSelected: (int index) {
+            setState(() {
+              selectedPageIndex = index;
+            });
+          },
+          destinations: const <NavigationDestination>[
+            NavigationDestination(
+              selectedIcon: Icon(Icons.person),
+              icon: Icon(Icons.person_outline),
+              label: 'Login',
+            ),
+            NavigationDestination(
+              selectedIcon: Icon(Icons.engineering),
+              icon: Icon(Icons.engineering_outlined),
+              label: 'Tarefas',
+            ),
+            NavigationDestination(
+              selectedIcon: Icon(Icons.bookmark),
+              icon: Icon(Icons.bookmark_border),
+              label: 'Sobre',
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
