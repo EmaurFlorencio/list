@@ -20,6 +20,15 @@ class _TodoListPageState extends State<TodoListPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: Row(
+            children: [
+              Icon(Icons.engineering_outlined),
+              SizedBox(width: 16),
+              Center(child: const Text('Minha Lista')),
+            ],
+          ),
+        ),
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(16),

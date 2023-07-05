@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:list/pages/about_page.dart';
 import 'package:list/pages/todo_list_page.dart';
 
 void main() {
@@ -26,11 +27,11 @@ class _MyAppState extends State<MyApp> {
               'Login',
             ),
           ),
-          Center(child: TodoListPage()),
           Center(
-            child: Text(
-              'About',
-            ),
+            child: TodoListPage(),
+          ),
+          Center(
+            child: AboutPage(),
           ),
         ][selectedPageIndex],
         bottomNavigationBar: NavigationBar(
