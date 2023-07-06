@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:list/pages/about_page.dart';
+import 'package:list/pages/home_page.dart';
 import 'package:list/pages/todo_list_page.dart';
 
 void main() {
@@ -23,9 +24,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         body: const [
           Center(
-            child: Text(
-              'Login',
-            ),
+            child: HomePage(),
           ),
           Center(
             child: TodoListPage(),
@@ -45,7 +44,7 @@ class _MyAppState extends State<MyApp> {
             NavigationDestination(
               selectedIcon: Icon(Icons.person),
               icon: Icon(Icons.person_outline),
-              label: 'Login',
+              label: 'Home',
             ),
             NavigationDestination(
               selectedIcon: Icon(Icons.engineering),

@@ -25,7 +25,7 @@ class _TodoListPageState extends State<TodoListPage> {
             children: [
               Icon(Icons.engineering_outlined),
               SizedBox(width: 16),
-              Center(child: const Text('Minha Lista')),
+              Center(child: const Text('Minha Lista Personalizada')),
             ],
           ),
         ),
@@ -70,7 +70,7 @@ class _TodoListPageState extends State<TodoListPage> {
                         todoController.clear();
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.purple,
+                        backgroundColor: Colors.black,
                         padding: EdgeInsets.all(16),
                       ),
                       child: Icon(
