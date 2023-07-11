@@ -22,10 +22,10 @@ class _TodoListPageState extends State<TodoListPage> {
       child: Scaffold(
         appBar: AppBar(
           title: Row(
-            children: [
+            children: const [
               Icon(Icons.engineering_outlined),
               SizedBox(width: 16),
-              Center(child: const Text('Minha Lista Personalizada')),
+              Center(child: Text('Minha Lista Personalizada')),
             ],
           ),
         ),
@@ -52,7 +52,7 @@ class _TodoListPageState extends State<TodoListPage> {
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: "Adicione uma tarefa",
-                          hintText: "Ex. Estuda Flutter",
+                          hintText: "Ex. Estudar Flutter",
                         ),
                       ),
                     ),
@@ -81,41 +81,6 @@ class _TodoListPageState extends State<TodoListPage> {
                   ],
                 ),
                 SizedBox(height: 16),
-
-                /* test expanded
-                Flexible(
-                  child: ListView(
-                    shrinkWrap: true,
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(4),
-                          color: Colors.grey[200],
-                        ),
-                        padding: const EdgeInsets.all(16),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "data",
-                              style: TextStyle(
-                                fontSize: 12,
-                              ),
-                            ),
-                            Text(
-                              "titulo",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w600,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(height: 16),*/
                 Flexible(
                   child: ListView(
                     shrinkWrap: true,

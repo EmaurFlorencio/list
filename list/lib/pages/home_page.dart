@@ -14,9 +14,16 @@ class _HomePage extends State<HomePage> {
       appBar: AppBar(
         title: Row(
           children: [
-            Icon(Icons.person_outline),
+            IconButton(
+                onPressed: () {
+                  //showLogin();
+                },
+                icon: Icon(Icons.person_outline)),
+            //Icon(Icons.person_outline),
             SizedBox(width: 16),
-            Center(child: const Text('Login')),
+            Center(
+              child: const Text('Inicial'),
+            ),
           ],
         ),
       ),
@@ -29,16 +36,31 @@ class _HomePage extends State<HomePage> {
           padding: const EdgeInsets.all(16),
           child: Column(
             mainAxisSize: MainAxisSize.min,
-            //crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "PPGIA 7310 - UFRPE",
+                "Lista",
                 style: TextStyle(
                   fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              Text(
+                "Personalizada",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
               SizedBox(height: 16),
-              Image.asset('images/logo1.png'),
+              Container(
+                height: MediaQuery.of(context).size.height * 0.3,
+                width: MediaQuery.of(context).size.width * 0.3,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Colors.grey[200],
+                ),
+                child: Image.asset('images/logo1.png'),
+              ),
             ],
           ),
         ),

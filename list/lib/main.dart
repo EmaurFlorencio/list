@@ -44,7 +44,7 @@ class _MyAppState extends State<MyApp> {
             NavigationDestination(
               selectedIcon: Icon(Icons.person),
               icon: Icon(Icons.person_outline),
-              label: 'Home',
+              label: 'Inicial',
             ),
             NavigationDestination(
               selectedIcon: Icon(Icons.engineering),

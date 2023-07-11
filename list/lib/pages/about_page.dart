@@ -13,10 +13,10 @@ class _AboutPage extends State<AboutPage> {
     return Scaffold(
       appBar: AppBar(
         title: Row(
-          children: [
+          children: const [
             Icon(Icons.bookmark_border),
             SizedBox(width: 16),
-            Center(child: const Text('Sobre o APP')),
+            Center(child: Text('Sobre o APP')),
           ],
         ),
       ),
@@ -30,7 +30,7 @@ class _AboutPage extends State<AboutPage> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             //crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+            children: const [
               Text(
                 "PPGIA 7310 - UFRPE",
                 style: TextStyle(
@@ -47,7 +47,7 @@ class _AboutPage extends State<AboutPage> {
               ),
               SizedBox(height: 16),
               Text(
-                "Versão 0.1.0",
+                "Autor: Emaur Florêncio de Oliveira",
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.w600,
@@ -55,7 +55,7 @@ class _AboutPage extends State<AboutPage> {
               ),
               SizedBox(height: 16),
               Text(
-                "Autor: Emaur Florêncio de Oliveira",
+                "Versão 0.1.0",
                 style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.w600,
