@@ -40,6 +40,7 @@ O Aplicativo Lista Personalizada visa organizar suas atividades acadêmicas diá
 ###
 
 ## Vídeo de Apresentação
+https://youtu.be/A8ppyCTjXMc
 
 ## Vídeo Demonstrativo
 ![Gif Demonstrativo](https://github.com/EmaurFlorencio/list/assets/128507169/34dce85c-7765-4316-9ad1-e9ed63d83538)
