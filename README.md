@@ -34,6 +34,8 @@ O Aplicativo Lista Personalizada visa organizar suas atividades acadêmicas diá
 ![Sobre](https://github.com/EmaurFlorencio/list/assets/128507169/a2620492-ae48-4f22-8dd8-9e5e54cbaf51)
 
 ### Widget Tree
+![Widget Tree - HomePage](https://github.com/EmaurFlorencio/list/assets/128507169/df87d2be-2e33-46e2-b355-ed5adfb275b4)
+
 ### Diagrama de Navegação das telas
 ![Telas](https://github.com/EmaurFlorencio/list/assets/128507169/8ef939e7-2412-4cce-8cfb-ef74dce8fbd0)
 
